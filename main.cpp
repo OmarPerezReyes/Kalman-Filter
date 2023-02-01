@@ -6,13 +6,13 @@
 #include <chrono>
 #include <iomanip>
 
-#include <Eigen/Dense>
+#include <eigen3/Eigen/Dense>
 #include <boost/random/mersenne_twister.hpp>
 #include <boost/random/normal_distribution.hpp>
 
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/video/tracking.hpp>
-#include "rapidcsv.h"
+#include "./rapidcsv/src/rapidcsv.h"
 
 namespace Eigen
 {
@@ -112,9 +112,9 @@ void on_mouse(int event, int x, int y, int flags, void* param) {
 // plot points
 #define drawCross( center, color, d )                                 \
 cv::line( img, cv::Point( center.x - d, center.y - d ),                \
-cv::Point( center.x + d, center.y + d ), color, 2, CV_AA, 0); \
+cv::Point( center.x + d, center.y + d ), color, 2, cv::LINE_AA, 0); \
 cv::line( img, cv::Point( center.x + d, center.y - d ),                \
-cv::Point( center.x - d, center.y + d ), color, 2, CV_AA, 0 )
+cv::Point( center.x - d, center.y + d ), color, 2, cv::LINE_AA, 0 )
 
 
 int main (int argc, char * const argv[]) {
