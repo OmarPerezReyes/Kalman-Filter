@@ -3,8 +3,8 @@ Kalman Filter with C++ and OpenCV
 >Compilación y ejecución
 ```
 make all
-make clean
 ./filterKalman
+make clean
 ```
 Credits
 ============
