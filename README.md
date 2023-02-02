@@ -1,5 +1,5 @@
-# Kalman-Filter
-Kalman Filter with C++ and OpenCV
+# Kalman Filter
+Kalman filter with C++ and OpenCV
 >Compilación y ejecución
 ```
 make all
